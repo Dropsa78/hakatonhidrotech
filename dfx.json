@@ -1,0 +1,49 @@
+{
+  "canisters": {
+    "Aqcua_Galbaic_6_backend": {
+      "build": "npx azle Aqcua_Galbaic_6_backend",
+      "candid": "src/Aqcua_Galbaic_6_backend/Aqcua_Galbaic_6_backend.did",
+      "gzip": true,
+      "main": "src/Aqcua_Galbaic_6_backend/src/index.ts",
+      "tech_stack": {
+        "cdk": {
+          "azle": {}
+        },
+        "language": {
+          "typescript": {}
+        }
+      },
+      "type": "custom",
+      "wasm": ".azle/Aqcua_Galbaic_6_backend/Aqcua_Galbaic_6_backend.wasm"
+    },
+    "Aqcua_Galbaic_6_frontend": {
+      "dependencies": [
+        "Aqcua_Galbaic_6_backend"
+      ],
+      "source": [
+        "src/Aqcua_Galbaic_6_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Aqcua_Galbaic_6_frontend"
+    },
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
