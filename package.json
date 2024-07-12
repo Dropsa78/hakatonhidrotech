@@ -15,5 +15,16 @@
   "workspaces": [
     "src/Aqcua_Galbaic_6_backend",
     "src/Aqcua_Galbaic_6_frontend"
-  ]
+  ],
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.10",
+    "crypto": "^1.0.1",
+    "express": "^4.19.2",
+    "path": "^0.12.7",
+    "querystring": "^0.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3",
+    "zlib": "^1.0.5"
+  }
 }
